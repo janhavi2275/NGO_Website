@@ -267,4 +267,27 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('%cCreating New Beginnings 🌱', 'color: #FF6B35; font-size: 16px;');
     console.log('Website developed with ❤️ for social impact');
 
+
+    // ===================================
+    // Scroll Animations
+    // ===================================
+    const scrollObserverOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const scrollObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, scrollObserverOptions);
+
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    revealElements.forEach(el => {
+        scrollObserver.observe(el);
+    });
+
 });
