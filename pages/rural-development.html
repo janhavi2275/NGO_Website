@@ -48,94 +48,191 @@
         </div>
     </section>
 
-    <!-- Impact Stats -->
-    <section
-        style="background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%); padding: 60px 0;">
-        <div class="container">
-            <div class="row text-center text-white g-4">
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="impact-number" data-target="25" style="color: white; font-size: 48px;">0</h2>
-                    <p style="font-size: 20px;">Villages Adopted</p>
+    <!-- Impact Dashboard -->
+    <section class="impact-stats-section" style="background: linear-gradient(135deg, #1B4332 0%, #001219 100%);">
+        <div class="container text-center text-white">
+            <h2 class="text-white mb-5">Village Growth Dashboard</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 reveal">
+                    <div class="stat-card">
+                        <i class="fas fa-home fa-3x mb-3"></i>
+                        <h2 class="display-3 fw-bold mb-2">25+</h2>
+                        <p>Villages Adopted</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="impact-number" data-target="150" style="color: white; font-size: 48px;">0</h2>
-                    <p style="font-size: 20px;">Farmers Supported</p>
+                <div class="col-lg-3 col-md-6 reveal stagger-1">
+                    <div class="stat-card">
+                        <i class="fas fa-tractor fa-3x mb-3"></i>
+                        <h2 class="display-3 fw-bold mb-2">150+</h2>
+                        <p>Farmers Supported</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h2 class="impact-number" data-target="10" style="color: white; font-size: 48px;">0</h2>
-                    <p style="font-size: 20px;">Water Projects</p>
+                <div class="col-lg-3 col-md-6 reveal stagger-2">
+                    <div class="stat-card">
+                        <i class="fas fa-faucet fa-3x mb-3"></i>
+                        <h2 class="display-3 fw-bold mb-2">10+</h2>
+                        <p>Water Reservoirs</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h2 style="color: white; font-size: 48px;">5000+</h2>
-                    <p style="font-size: 20px;">Lives Impacted</p>
+                <div class="col-lg-3 col-md-6 reveal stagger-3">
+                    <div class="stat-card">
+                        <i class="fas fa-users-rays fa-3x mb-3"></i>
+                        <h2 class="display-3 fw-bold mb-2">5000+</h2>
+                        <p>Lives Transformed</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Our Initiatives -->
-    <section>
-        <div class="container">
-            <div class="section-header reveal">
-                <h2>Our Rural Initiatives</h2>
-                <p>Holistic approach to village transformation</p>
+    <section class="container" style="padding: 80px 0;">
+        <div class="section-header reveal text-center mb-5">
+            <h2>Our Rural Transformation Model</h2>
+            <div style="width: 60px; height: 3px; background: var(--secondary-orange); margin: 15px auto;"></div>
+            <p class="lead">We believe in a holistic 'Adarsh Gram' (Model Village) approach that integrates economy,
+                ecology, and technology.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Agriculture -->
+            <div class="col-lg-6 reveal-left">
+                <div class="pillar-card h-100">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-leaf fa-3x" style="color: var(--primary-green);"></i>
+                        <div class="ms-3">
+                            <h3 class="mb-3">Sustainable Agriculture</h3>
+                            <p>Moving from traditional to profitable and sustainable farming practices.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Zero-Budget Natural Farming
+                                    labs</li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Market linkages for organic
+                                    produce</li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Soil health card distribution
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <!-- Agriculture -->
-                <div class="col-lg-6 reveal-left stagger-1">
-                    <div class="pillar-card">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-tractor fa-3x me-3"></i>
-                            <div>
-                                <h3 class="card-title">Sustainable Agriculture</h3>
-                                <p class="card-text">Promoting organic farming, modern techniques, and market linkages
-                                    for farmers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Water Conservation -->
-                <div class="col-lg-6 reveal-right">
-                    <div class="pillar-card">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-water fa-3x me-3"></i>
-                            <div>
-                                <h3 class="card-title">Water Conservation</h3>
-                                <p class="card-text">Building check dams, farm ponds, and rainwater harvesting
-                                    structures.</p>
-                            </div>
+            <!-- Water -->
+            <div class="col-lg-6 reveal-right">
+                <div class="pillar-card h-100">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-cloud-rain fa-3x" style="color: var(--accent-blue);"></i>
+                        <div class="ms-3">
+                            <h3 class="mb-3">Water Security</h3>
+                            <p>Enabling villages to become water-tanker free through community participation.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Desilting of old village ponds
+                                </li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Continuous contour trenching
+                                    (CCT)</li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Micro-irrigation adoption
+                                    support</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Infrastructure -->
-                <div class="col-lg-6 reveal-left">
-                    <div class="pillar-card">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-road fa-3x me-3"></i>
-                            <div>
-                                <h3 class="card-title">Village Infrastructure</h3>
-                                <p class="card-text">Improving roads, street lights, community halls, and sanitation
-                                    facilities.</p>
-                            </div>
+            <!-- Digital -->
+            <div class="col-lg-6 reveal-left">
+                <div class="pillar-card h-100">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-laptop-code fa-3x" style="color: var(--secondary-orange);"></i>
+                        <div class="ms-3">
+                            <h3 class="mb-3">Digital Empowerment</h3>
+                            <p>Bringing the power of the internet and e-governance to the village center.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Village Digital Service
+                                    Centers</li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Online banking & UPI training
+                                </li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> E-learning for rural youth
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Digital Village -->
-                <div class="col-lg-6 reveal-right">
-                    <div class="pillar-card">
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-wifi fa-3x me-3"></i>
-                            <div>
-                                <h3 class="card-title">Digital Village</h3>
-                                <p class="card-text">Connecting villages with internet, digital service centers, and
-                                    e-governance.</p>
+            <!-- Infrastructure -->
+            <div class="col-lg-6 reveal-right">
+                <div class="pillar-card h-100">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-solar-panel fa-3x" style="color: #ffb703;"></i>
+                        <div class="ms-3">
+                            <h3 class="mb-3">Clean Energy & Infra</h3>
+                            <p>Modernizing village infrastructure with a focus on sustainability.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Solar street light
+                                    installation</li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Paver block roads for hamlets
+                                </li>
+                                <li><i class="fas fa-check-circle me-2 text-primary"></i> Biogas promotion for kitchens
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section-alt" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-header text-center mb-5 reveal">
+                <h2>A Tale of Transformation</h2>
+                <p>The story of Shirala - Our first Model Village</p>
+            </div>
+            <div class="row align-items-center reveal">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="p-4 bg-white rounded shadow-sm border-start border-5 border-primary">
+                        <h3 class="mb-4">From Drought to Abundance</h3>
+                        <p class="lead">Shirala village faced acute water shortage for 20 years. Farmers were migrating
+                            to cities. Navinya intervened in 2021.</p>
+                        <p>Through our integrated approach, we worked with the local youth to desilt two large ponds and
+                            implement rainwater harvesting. Today, Shirala has year-round water supply, and farmers have
+                            started growing high-value vegetable crops.</p>
+                        <hr class="my-4">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <h4 class="mb-0 text-primary">40%</h4>
+                                <small class="text-muted">Income Increase</small>
+                            </div>
+                            <div class="me-3 border-start ps-3">
+                                <h4 class="mb-0 text-primary">Zero</h4>
+                                <small class="text-muted">Water Tankers</small>
+                            </div>
+                            <div class="border-start ps-3">
+                                <h4 class="mb-0 text-primary">100%</h4>
+                                <small class="text-muted">Digital Literacy</small>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6">
+                    <img src="../assets/images/hero/village-scene.jpg" alt="Village Transformation"
+                        class="img-fluid rounded shadow-lg hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container text-center" style="padding: 80px 0;">
+        <div class="reveal"
+            style="background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%); border-radius: 30px; padding: 70px 40px; color: white;">
+            <h2 class="text-white mb-4">Partner for Village Transformation</h2>
+            <p class="lead mb-5 mx-auto opacity-9" style="max-width: 800px;">Adopt a village or support a specific
+                infrastructure project. Together, we can build the 'New India' of our dreams, starting from the roots.
+            </p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="donate.html" class="btn btn-secondary btn-lg px-5"
+                    style="background: white; color: var(--primary-green); border: none;">Adopt a Village</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Partner with Us</a>
             </div>
         </div>
     </section>
