@@ -152,21 +152,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===================================
     // Navbar Scroll Effect
     // ===================================
-    let lastScroll = 0;
-    const navbar = document.querySelector('.navbar');
+    const navbarItem = document.querySelector('.navbar');
 
     window.addEventListener('scroll', function () {
+        if (!navbarItem) return;
+
         const currentScroll = window.pageYOffset;
 
         // Add shadow on scroll
         if (currentScroll > 50) {
-            navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            navbarItem.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
         } else {
-            navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
+            navbarItem.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
         }
-
-        lastScroll = currentScroll;
     });
+
 
     // ===================================
     // Form Validation (Newsletter)
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, scrollObserverOptions);
 
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-    revealElements.forEach(el => {
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
         scrollObserver.observe(el);
     });
 

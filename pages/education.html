@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -34,26 +34,9 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="navbar-brand">
-                <i class="fas fa-hands-helping"></i> Navinya Foundation
-            </a>
-            <button class="navbar-toggler" id="navToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="navbar-nav" id="navMenu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="#" class="nav-link">Programs</a></li>
-                <li><a href="impact.html" class="nav-link">Impact</a></li>
-                <li><a href="blog.html" class="nav-link">News</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="donate.html" class="btn btn-primary">Donate Now</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Header Placeholder - Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
 
     <!-- Page Hero -->
     <section class="hero-carousel" style="height: 400px;">
@@ -140,10 +123,10 @@
                 </div>
 
                 <!-- Digital Literacy -->
-                <div class="col-lg-6">
-                    <div class="card">
+                <div class="col-lg-6 reveal-left">
+                    <div class="pillar-card">
                         <div class="d-flex align-items-start">
-                            <i class="fas fa-laptop fa-3x me-3" style="color: var(--accent-blue);"></i>
+                            <i class="fas fa-laptop fa-3x"></i>
                             <div>
                                 <h3 class="card-title">Digital Literacy Program</h3>
                                 <p class="card-text"><strong>For:</strong> Students and youth (14-25 years)</p>
@@ -152,17 +135,17 @@
                                 <p class="card-text"><strong>Certification:</strong> Government-recognized certificate
                                 </p>
                                 <p class="card-text"><strong>Duration:</strong> 3 months</p>
-                                <a href="apply.html" class="btn btn-primary">Register</a>
+                                <a href="apply.html" class="btn btn-primary mt-3">Register</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Career Guidance -->
-                <div class="col-lg-6">
-                    <div class="card">
+                <div class="col-lg-6 reveal-right">
+                    <div class="pillar-card">
                         <div class="d-flex align-items-start">
-                            <i class="fas fa-compass fa-3x me-3" style="color: var(--success);"></i>
+                            <i class="fas fa-compass fa-3x"></i>
                             <div>
                                 <h3 class="card-title">Career Guidance & Counseling</h3>
                                 <p class="card-text"><strong>For:</strong> Class 10-12 students and graduates</p>
@@ -170,7 +153,7 @@
                                     college guidance</p>
                                 <p class="card-text"><strong>Mode:</strong> One-on-one sessions + group workshops</p>
                                 <p class="card-text"><strong>Cost:</strong> Completely FREE</p>
-                                <a href="contact.html" class="btn btn-primary">Book Session</a>
+                                <a href="contact.html" class="btn btn-primary mt-3">Book Session</a>
                             </div>
                         </div>
                     </div>
@@ -291,62 +274,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h4>Navinya Foundation</h4>
-                    <p>Creating new beginnings through education, empowerment, and sustainable development in rural
-                        Maharashtra.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="impact.html">Our Impact</a></li>
-                        <li><a href="blog.html">News & Updates</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="partner.html">Partner With Us</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="internships.html">Internships</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Shirpur, Dhule, Maharashtra 425405</li>
-                        <li><i class="fas fa-phone"></i> +91-XXXXX-XXXXX</li>
-                        <li><i class="fas fa-envelope"></i> info@navinyafoundation.org</li>
-                    </ul>
-                    <p class="mt-3"><strong>80G Registered</strong><br>Tax benefits on donations</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Navinya Foundation. All rights reserved. | <a href="privacy.html"
-                        style="color: rgba(255,255,255,0.7);">Privacy Policy</a> | <a href="terms.html"
-                        style="color: rgba(255,255,255,0.7);">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Placeholder - Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Component Loader (loads header and footer) -->
+    <script src="../assets/js/components.js"></script>
 
     <!-- Custom JS -->
     <script src="../assets/js/main.js"></script>

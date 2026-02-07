@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -41,26 +41,9 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <i class="fas fa-hands-helping"></i> Navinya Foundation
-            </a>
-            <button class="navbar-toggler" id="navToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="navbar-nav" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="pages/about.html" class="nav-link">About Us</a></li>
-                <li><a href="pages/programs.html" class="nav-link">Programs</a></li>
-                <li><a href="pages/impact.html" class="nav-link">Impact</a></li>
-                <li><a href="pages/blog.html" class="nav-link">News</a></li>
-                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
-                <li><a href="pages/donate.html" class="btn btn-primary">Donate Now</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Header Placeholder - Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
 
     <!-- Hero Carousel -->
     <section class="hero-carousel">
@@ -68,11 +51,12 @@
         <div class="hero-slide active" style="background-image: url('assets/images/hero/students-classroom.jpg');">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h1>नवीन्य - A New Beginning</h1>
-                    <p>Empowering rural Maharashtra through education, skills, and sustainable development</p>
+                    <h1 class="hero-title-hindi">एक छोटे सहयोग से बदल सकती है किसी की पूरी जिंदगी</h1>
+                    <p class="hero-subtitle">Transforming Lives Through Education, Empowerment & Opportunity</p>
+                    <p class="hero-tagline">Navinya Foundation | Building a Brighter Tomorrow for Rural Maharashtra</p>
                     <div class="hero-buttons">
-                        <a href="pages/donate.html" class="btn btn-primary">Support Our Mission</a>
-                        <a href="pages/about.html" class="btn btn-secondary">Learn More</a>
+                        <a href="pages/donate.html" class="btn btn-primary">Donate Now</a>
+                        <a href="#our-pillars" class="btn btn-outline-light">Explore Our Work</a>
                     </div>
                 </div>
             </div>
@@ -82,11 +66,13 @@
         <div class="hero-slide" style="background-image: url('assets/images/hero/women-training.jpg');">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h1>Transforming Lives, Building Futures</h1>
-                    <p>5000+ beneficiaries across 25+ villages in North Maharashtra</p>
+                    <h1>500+ Lives Transformed in Just 3 Years</h1>
+                    <p>From scholarships to skills, from villages to ventures - we're creating lasting change in
+                        Maharashtra's heartland</p>
                     <div class="hero-buttons">
-                        <a href="pages/impact.html" class="btn btn-primary">See Our Impact</a>
-                        <a href="pages/volunteer.html" class="btn btn-secondary">Volunteer With Us</a>
+                        <a href="pages/impact.html" class="btn btn-primary"
+                            style="background-color: var(--primary-green); border-color: var(--primary-green);">See Our
+                            Impact</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +82,13 @@
         <div class="hero-slide" style="background-image: url('assets/images/hero/village-scene.jpg');">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h1>Every Donation Creates Hope</h1>
-                    <p>80G registered | 100% transparent | Direct impact on communities</p>
+                    <h1>You Can Make a Difference Today</h1>
+                    <p>Whether it's ₹500 or 5 hours of your time - every contribution creates ripples of change</p>
                     <div class="hero-buttons">
-                        <a href="pages/donate.html" class="btn btn-primary">Donate Now</a>
-                        <a href="pages/partner.html" class="btn btn-secondary">Partner With Us</a>
+                        <a href="pages/donate.html" class="btn btn-primary"
+                            style="background-color: var(--secondary-orange); border-color: var(--secondary-orange);">Donate
+                            Now</a>
+                        <a href="pages/volunteer.html" class="btn btn-outline-light">Become a Volunteer</a>
                     </div>
                 </div>
             </div>
@@ -119,32 +107,34 @@
         <div class="container">
             <div class="section-header">
                 <h2 style="color: white;">Our Impact in Numbers</h2>
-                <p style="color: rgba(255,255,255,0.9);">Real change, measurable results</p>
+                <p style="color: rgba(255,255,255,0.9);">Updated as of January 2025</p>
             </div>
-            <div class="impact-grid">
+            <div class="impact-grid" style="grid-template-columns: repeat(4, 1fr);">
                 <div class="impact-item">
-                    <span class="impact-number" data-target="5000">0</span>
-                    <span class="impact-label">Lives Impacted</span>
+                    <div class="mb-2"><i class="fas fa-user-graduate fa-2x" style="color: var(--primary-green);"></i>
+                    </div>
+                    <span class="impact-number" data-target="500">0</span>
+                    <span class="impact-label-hi">छात्र सहायता प्रदान</span>
+                    <span class="impact-label-en">Students Supported</span>
                 </div>
                 <div class="impact-item">
+                    <div class="mb-2"><i class="fas fa-medal fa-2x" style="color: var(--secondary-orange);"></i></div>
                     <span class="impact-number" data-target="120">0</span>
-                    <span class="impact-label">Scholarships Awarded</span>
+                    <span class="impact-label-hi">छात्रवृत्ति वितरित</span>
+                    <span class="impact-label-en">Scholarships Awarded</span>
                 </div>
                 <div class="impact-item">
+                    <div class="mb-2"><i class="fas fa-female fa-2x" style="color: var(--accent-blue);"></i></div>
                     <span class="impact-number" data-target="80">0</span>
-                    <span class="impact-label">Women Empowered</span>
+                    <span class="impact-label-hi">महिलाओं को सशक्त बनाया</span>
+                    <span class="impact-label-en">Women Empowered</span>
                 </div>
                 <div class="impact-item">
+                    <div class="mb-2"><i class="fas fa-map-marker-alt fa-2x" style="color: var(--primary-green);"></i>
+                    </div>
                     <span class="impact-number" data-target="25">0</span>
-                    <span class="impact-label">Villages Reached</span>
-                </div>
-                <div class="impact-item">
-                    <span class="impact-number" data-target="100">0</span>
-                    <span class="impact-label">Health Camps</span>
-                </div>
-                <div class="impact-item">
-                    <span class="impact-number" data-target="10000">0</span>
-                    <span class="impact-label">Trees Planted</span>
+                    <span class="impact-label-hi">गाँवों में पहुँच</span>
+                    <span class="impact-label-en">Villages Reached</span>
                 </div>
             </div>
         </div>
@@ -154,39 +144,58 @@
     <section id="about">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2>About Navinya Foundation</h2>
-                    <p class="lead">Creating self-sustaining ecosystems for education, skills, livelihood, and dignity
-                        in rural Maharashtra.</p>
-                    <p>Founded in 2022, Navinya Foundation ("नवीन्य" meaning "New Beginning") works across 7 strategic
-                        pillars to transform rural communities. We believe every person deserves a chance to realize
-                        their full potential, regardless of where they were born.</p>
-                    <div class="row mt-4">
-                        <div class="col-6">
-                            <h4 style="color: var(--secondary-orange);">80G Registered</h4>
-                            <p>Tax benefits on donations</p>
-                        </div>
-                        <div class="col-6">
-                            <h4 style="color: var(--secondary-orange);">100% Transparent</h4>
-                            <p>Every rupee accounted for</p>
+                <div class="col-lg-7">
+                    <h5 style="color: var(--secondary-orange); font-weight: 700;">ABOUT US</h5>
+                    <h2 class="mb-3">नवीन्य - एक नई शुरुआत का वादा<br><span style="font-size: 0.8em; color: #555;">A
+                            Promise of New Beginnings</span></h2>
+                    <p class="lead" style="font-size: 1.1rem;">Navinya Foundation was born from a simple belief: every
+                        child, every woman, every family in rural Maharashtra deserves access to opportunities that can
+                        transform their lives.</p>
+                    <p>Founded in 2022 by a group of educators and social workers who witnessed firsthand the struggles
+                        of talented students held back by poverty, we set out to bridge the gap between potential and
+                        possibility.</p>
+                    <p>What makes us different? We combine grassroots understanding with modern technology, traditional
+                        wisdom with innovative solutions, and most importantly - we measure every rupee's impact.
+                        Because we believe that transparency and results are the foundation of trust.</p>
+
+                    <a href="pages/about.html" class="btn btn-outline-primary mt-3">Read Our Full Story</a>
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets/images/general/about-image.jpg" alt="Navinya Foundation Team"
+                        class="img-fluid rounded mb-4" style="box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+
+                    <!-- Quick Facts Box -->
+                    <div class="card bg-light border-0">
+                        <div class="card-body">
+                            <h5
+                                style="color: var(--primary-green); border-bottom: 2px solid var(--primary-green); padding-bottom: 10px; display: inline-block;">
+                                Quick Facts</h5>
+                            <ul class="list-unstyled mt-2">
+                                <li class="mb-2"><i class="fas fa-calendar-check me-2 text-muted"></i>
+                                    <strong>Founded:</strong> 2022
+                                </li>
+                                <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-muted"></i>
+                                    <strong>HQ:</strong> Shirpur, Maharashtra
+                                </li>
+                                <li class="mb-2"><i class="fas fa-users me-2 text-muted"></i> <strong>Team:</strong> 15+
+                                    Dedicated Members</li>
+                                <li class="mb-0"><i class="fas fa-file-invoice me-2 text-muted"></i> <strong>80G
+                                        Registered:</strong> Yes</li>
+                            </ul>
                         </div>
                     </div>
-                    <a href="pages/about.html" class="btn btn-outline-primary mt-3">Read Our Story</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="assets/images/general/about-image.jpg" alt="Navinya Foundation Team"
-                        class="img-fluid rounded" style="box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seven Pillars -->
-    <section class="section-alt reveal">
+    <section id="our-pillars" class="section-alt reveal">
         <div class="container">
             <div class="section-header reveal">
-                <h2>Our Seven Pillars of Impact</h2>
-                <p>Comprehensive approach to community transformation</p>
+                <h2>हमारे सात स्तंभ<br><span style="font-size: 0.6em; color: #666;">Our Seven Pillars of Impact</span>
+                </h2>
+                <p>Comprehensive solutions for holistic community transformation</p>
             </div>
             <div class="grid-3">
                 <!-- Pillar 1 -->
@@ -194,7 +203,8 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-graduation-cap fa-3x" style="color: var(--primary-green);"></i>
                     </div>
-                    <h4 class="card-title text-center">Education Equity & Access</h4>
+                    <h4 class="card-title text-center">Education Equity & Access<br><small class="text-muted"
+                            style="font-size: 0.7em;">शिक्षा समानता एवं पहुँच</small></h4>
                     <p class="card-text">Scholarships, coaching, digital learning, and school adoption programs ensuring
                         quality education for all.</p>
                     <a href="pages/education.html" class="btn btn-outline-primary w-100">Learn More</a>
@@ -205,9 +215,10 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-female fa-3x" style="color: var(--secondary-orange);"></i>
                     </div>
-                    <h4 class="card-title text-center">Women Empowerment</h4>
-                    <p class="card-text">Skill training, entrepreneurship support, health awareness, and leadership
-                        development for women.</p>
+                    <h4 class="card-title text-center">Women Empowerment<br><small class="text-muted"
+                            style="font-size: 0.7em;">महिला सशक्तिकरण</small></h4>
+                    <p class="card-text">Skill training, entrepreneurship support, health awareness, and economic
+                        independence programs.</p>
                     <a href="pages/women-empowerment.html" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
 
@@ -216,9 +227,10 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-tractor fa-3x" style="color: var(--accent-blue);"></i>
                     </div>
-                    <h4 class="card-title text-center">Rural Development</h4>
-                    <p class="card-text">Agriculture support, water conservation, rural entrepreneurship, and digital
-                        village initiatives.</p>
+                    <h4 class="card-title text-center">Rural Development<br><small class="text-muted"
+                            style="font-size: 0.7em;">ग्रामीण विकास</small></h4>
+                    <p class="card-text">Sustainable agriculture, water conservation, and livelihood enhancement
+                        initiatives.</p>
                     <a href="pages/rural-development.html" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
 
@@ -227,9 +239,9 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-child fa-3x" style="color: var(--success);"></i>
                     </div>
-                    <h4 class="card-title text-center">Child Welfare</h4>
-                    <p class="card-text">Nutrition programs, child protection, holistic development, and special needs
-                        support.</p>
+                    <h4 class="card-title text-center">Child Welfare<br><small class="text-muted"
+                            style="font-size: 0.7em;">बाल कल्याण एवं विकास</small></h4>
+                    <p class="card-text">Nutrition, education, protection, and holistic development for every child.</p>
                     <a href="pages/child-welfare.html" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
 
@@ -238,9 +250,10 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-heartbeat fa-3x" style="color: var(--danger);"></i>
                     </div>
-                    <h4 class="card-title text-center">Health & Sanitation</h4>
-                    <p class="card-text">Health camps, disease prevention, sanitation facilities, and mobile health van
-                        services.</p>
+                    <h4 class="card-title text-center">Health & Sanitation<br><small class="text-muted"
+                            style="font-size: 0.7em;">स्वास्थ्य एवं स्वच्छता</small></h4>
+                    <p class="card-text">Free health camps, sanitation infrastructure, and wellness programs for rural
+                        communities.</p>
                     <a href="pages/health.html" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
 
@@ -249,7 +262,8 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-leaf fa-3x" style="color: var(--primary-green);"></i>
                     </div>
-                    <h4 class="card-title text-center">Environment & Sustainability</h4>
+                    <h4 class="card-title text-center">Environment<br><small class="text-muted"
+                            style="font-size: 0.7em;">पर्यावरण एवं स्थिरता</small></h4>
                     <p class="card-text">Tree plantation, waste management, renewable energy, and climate action
                         initiatives.</p>
                     <a href="pages/environment.html" class="btn btn-outline-primary w-100">Learn More</a>
@@ -260,8 +274,9 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-users fa-3x" style="color: var(--accent-blue);"></i>
                     </div>
-                    <h4 class="card-title text-center">Community Building</h4>
-                    <p class="card-text">Volunteer networks, disaster relief, cultural preservation, and civic
+                    <h4 class="card-title text-center">Community Building<br><small class="text-muted"
+                            style="font-size: 0.7em;">समुदाय निर्माण</small></h4>
+                    <p class="card-text">Volunteer mobilization, cultural preservation, disaster relief, and civic
                         engagement programs.</p>
                     <a href="pages/community.html" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
@@ -273,16 +288,18 @@
     <section>
         <div class="container">
             <div class="section-header">
-                <h2>Featured Campaigns</h2>
-                <p>Support our active initiatives</p>
+                <h2>Current Campaigns<br><span style="font-size: 0.6em; color: #666;">Join us in making these
+                        initiatives a reality</span></h2>
             </div>
             <div class="grid-3">
                 <!-- Campaign 1 -->
-                <div class="card">
+                <div class="card position-relative">
+                    <span class="badge bg-success position-absolute top-0 end-0 m-3 p-2">ACTIVE</span>
                     <img src="assets/images/campaigns/scholarship-2025.jpg" alt="Scholarship Program 2025"
                         class="card-img-top">
-                    <h4 class="card-title">2025 Scholarship Program</h4>
-                    <p class="card-text">Support 500 students from rural Maharashtra to pursue higher education</p>
+                    <h4 class="card-title mt-3">2025 Scholarship Program</h4>
+                    <p class="card-text">Help 500 deserving students pursue their dreams. Every ₹10,000 sponsors one
+                        student's education for a year.</p>
                     <div class="mb-3">
                         <div class="d-flex justify-content-between mb-2">
                             <span><strong>₹32,00,000</strong> raised</span>
@@ -299,14 +316,16 @@
                 </div>
 
                 <!-- Campaign 2 -->
-                <div class="card">
+                <div class="card position-relative">
+                    <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 p-2">URGENT</span>
                     <img src="assets/images/campaigns/women-skill.jpg" alt="Women Skill Development"
                         class="card-img-top">
-                    <h4 class="card-title">Women Skill Development</h4>
-                    <p class="card-text">Train 100 women in vocational skills and entrepreneurship</p>
+                    <h4 class="card-title mt-3">Women Skill Development</h4>
+                    <p class="card-text">Train 100 women in vocational skills. ₹5,000 trains one woman in tailoring or
+                        digital skills.</p>
                     <div class="mb-3">
                         <div class="d-flex justify-content-between mb-2">
-                            <span><strong>70</strong> women trained</span>
+                            <span><strong>70</strong> women enrolled</span>
                             <span>70%</span>
                         </div>
                         <div class="progress" style="height: 8px;">
@@ -316,15 +335,16 @@
                         </div>
                         <small class="text-muted">Goal: 100 women</small>
                     </div>
-                    <a href="pages/donate.html?campaign=women" class="btn btn-primary w-100">Donate Now</a>
+                    <a href="pages/donate.html?campaign=women" class="btn btn-primary w-100">Support Now</a>
                 </div>
 
                 <!-- Campaign 3 -->
-                <div class="card">
+                <div class="card position-relative">
+                    <span class="badge bg-info text-dark position-absolute top-0 end-0 m-3 p-2">NEW</span>
                     <img src="assets/images/campaigns/village-adoption.jpg" alt="Village Adoption" class="card-img-top">
-                    <h4 class="card-title">Village Adoption - Shirala</h4>
-                    <p class="card-text">Holistic development of Shirala village with education, health, and
-                        infrastructure</p>
+                    <h4 class="card-title mt-3">Adopt a Village - Shirala</h4>
+                    <p class="card-text">Transform an entire village with education, health, water, and sanitation
+                        projects. Holistic development.</p>
                     <div class="mb-3">
                         <div class="d-flex justify-content-between mb-2">
                             <span><strong>₹3,50,000</strong> raised</span>
@@ -337,7 +357,7 @@
                         </div>
                         <small class="text-muted">Goal: ₹15,00,000</small>
                     </div>
-                    <a href="pages/donate.html?campaign=village" class="btn btn-primary w-100">Donate Now</a>
+                    <a href="pages/donate.html?campaign=village" class="btn btn-outline-primary w-100">Learn More</a>
                 </div>
             </div>
         </div>
@@ -347,8 +367,8 @@
     <section class="section-alt">
         <div class="container">
             <div class="section-header">
-                <h2>Success Stories</h2>
-                <p>Real people, real transformations</p>
+                <h2>Stories of Transformation<br><span style="font-size: 0.6em; color: #666;">Real people, real impact,
+                        real change</span></h2>
             </div>
             <div class="grid-3">
                 <!-- Story 1 -->
@@ -357,12 +377,13 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-quote-left fa-2x" style="color: var(--primary-green); opacity: 0.3;"></i>
                     </div>
-                    <p class="card-text" style="font-style: italic;">"Navinya Foundation didn't just give me a
-                        scholarship, they gave me hope. Today I'm in my final year of engineering with a job offer in
-                        hand."</p>
+                    <p class="card-text" style="font-style: italic; font-size: 0.95em;">"नवीन्य फाउंडेशन ने सिर्फ मेरी
+                        fees नहीं भरी, उन्होंने मेरे सपने को जिंदा रखा। आज मैं अपने परिवार का सहारा बन सकूंगी।"</p>
+                    <p class="card-text text-muted mb-2" style="font-size: 0.85em;">(Navinya Foundation didn't just pay
+                        my fees, they kept my dream alive. Today I can support my family.)</p>
                     <h5 class="text-center" style="color: var(--primary-green);">Priya Sharma</h5>
-                    <p class="text-center text-muted">Engineering Student, Pune</p>
-                    <a href="pages/impact.html#priya-story" class="btn btn-outline-primary w-100">Read Full Story</a>
+                    <p class="text-center text-muted">Engineering Student, Dhule</p>
+                    <a href="pages/impact.html" class="btn btn-outline-primary w-100">Read Full Story</a>
                 </div>
 
                 <!-- Story 2 -->
@@ -371,12 +392,11 @@
                     <div class="text-center mb-3">
                         <i class="fas fa-quote-left fa-2x" style="color: var(--secondary-orange); opacity: 0.3;"></i>
                     </div>
-                    <p class="card-text" style="font-style: italic;">"From a homemaker to running my own boutique -
-                        Navinya's tailoring course changed my life. I now earn ₹15,000/month and employ 2 other women."
-                    </p>
+                    <p class="card-text" style="font-style: italic;">"I never thought I could earn ₹15,000 a month from
+                        my own business. Navinya gave me skills, confidence, and customers."</p>
                     <h5 class="text-center" style="color: var(--secondary-orange);">Savita Patil</h5>
                     <p class="text-center text-muted">Entrepreneur, Jalgaon</p>
-                    <a href="pages/impact.html#savita-story" class="btn btn-outline-primary w-100">Read Full Story</a>
+                    <a href="pages/impact.html" class="btn btn-outline-primary w-100">Read Full Story</a>
                 </div>
 
                 <!-- Story 3 -->
@@ -389,7 +409,7 @@
                         have a computer lab, health camps every month, and 50 children receiving scholarships."</p>
                     <h5 class="text-center" style="color: var(--accent-blue);">Ramesh Deshmukh</h5>
                     <p class="text-center text-muted">Sarpanch, Nandgaon Village</p>
-                    <a href="pages/impact.html#nandgaon-story" class="btn btn-outline-primary w-100">Read Full Story</a>
+                    <a href="pages/impact.html" class="btn btn-outline-primary w-100">Read Full Story</a>
                 </div>
             </div>
         </div>
@@ -505,70 +525,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <!-- About -->
-                <div class="footer-section">
-                    <h4>Navinya Foundation</h4>
-                    <p>Creating new beginnings through education, empowerment, and sustainable development in rural
-                        Maharashtra.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+    <!-- Footer Placeholder - Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
-                <!-- Quick Links -->
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="pages/about.html">About Us</a></li>
-                        <li><a href="pages/impact.html">Our Impact</a></li>
-                        <li><a href="pages/blog.html">News & Updates</a></li>
-                        <li><a href="pages/resources.html">Resources</a></li>
-                        <li><a href="pages/contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Get Involved -->
-                <div class="footer-section">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="pages/donate.html">Donate</a></li>
-                        <li><a href="pages/volunteer.html">Volunteer</a></li>
-                        <li><a href="pages/partner.html">Partner With Us</a></li>
-                        <li><a href="pages/careers.html">Careers</a></li>
-                        <li><a href="pages/internships.html">Internships</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Shirpur, Dhule, Maharashtra 425405</li>
-                        <li><i class="fas fa-phone"></i> +91-XXXXX-XXXXX</li>
-                        <li><i class="fas fa-envelope"></i> info@navinyafoundation.org</li>
-                    </ul>
-                    <p class="mt-3"><strong>80G Registered</strong><br>Tax benefits on donations</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Navinya Foundation. All rights reserved. | <a href="pages/privacy.html"
-                        style="color: rgba(255,255,255,0.7);">Privacy Policy</a> | <a href="pages/terms.html"
-                        style="color: rgba(255,255,255,0.7);">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Component Loader (loads header and footer) -->
+    <script src="assets/js/components.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

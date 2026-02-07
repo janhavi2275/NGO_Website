@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
   font-weight: 600;
   line-height: var(--heading-line-height);
   color: var(--text-dark);
@@ -131,7 +131,7 @@ img {
   margin-bottom: 0;
 }
 
-/* Section Spacing */
+/* Section Spacing - Professional Breathing Room */
 section {
   padding: 50px 0;
 }
@@ -328,13 +328,15 @@ section {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
   background-size: cover;
   background-position: center;
 }
 
 .hero-slide.active {
   opacity: 1;
+  visibility: visible;
 }
 
 .hero-overlay {
@@ -360,6 +362,16 @@ section {
   color: var(--bg-white);
   font-size: 56px;
   margin-bottom: var(--space-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title-hindi {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 42px;
+  margin-bottom: var(--space-md);
+  color: var(--bg-white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -546,6 +558,69 @@ footer {
 }
 
 /* ===================================
+   Pillar Pages & Impact Sections 
+   =================================== */
+.pillar-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pillar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-green);
+}
+
+.pillar-card i {
+  color: var(--primary-green);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pillar-card:hover i {
+  transform: scale(1.1);
+}
+
+.impact-stats-section {
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 20px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stat-card .display-3 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.stat-card p {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+
+/* ===================================
    Responsive Design
    =================================== */
 
@@ -612,13 +687,49 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 /* Scroll Animations */
-.reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s ease-out; }
-.reveal.active { opacity: 1; transform: translateY(0); }
-.reveal-left { opacity: 0; transform: translateX(-50px); transition: all 0.8s ease-out; }
-.reveal-left.active { opacity: 1; transform: translateX(0); }
-.reveal-right { opacity: 0; transform: translateX(50px); transition: all 0.8s ease-out; }
-.reveal-right.active { opacity: 1; transform: translateX(0); }
-.stagger-1 { transition-delay: 0.1s; }
-.stagger-2 { transition-delay: 0.2s; }
-.stagger-3 { transition-delay: 0.3s; }
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.stagger-1 {
+  transition-delay: 0.1s;
+}
+
+.stagger-2 {
+  transition-delay: 0.2s;
+}
+
+.stagger-3 {
+  transition-delay: 0.3s;
+}

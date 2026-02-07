@@ -76,7 +76,7 @@
 - [ ] 80G Certificate
 - [ ] 12A Registration Certificate
 - [ ] PAN Card
-- [ ] FCRA Certificate (if applicable)//
+- [ ] FCRA Certificate (if applicable)
 
 #### Reports
 - [ ] Annual Report 2023-24 (PDF, designed)
