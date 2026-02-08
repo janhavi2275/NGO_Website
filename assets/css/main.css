@@ -36,7 +36,10 @@
   --body-line-height: 1.6;
 
   /* Transitions */
-  --transition-base: all 0.3s ease;
+  --transition-base: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* ===================================
@@ -198,6 +201,57 @@ section {
 }
 
 /* ===================================
+   Premium Utilities
+   =================================== */
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-premium);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.hover-lift {
+  transition: var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Refined Progress Bars */
+.progress-premium {
+  height: 8px;
+  background-color: #E9ECEF;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+}
+
+.progress-premium .progress-bar {
+  border-radius: 10px;
+  transition: width 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===================================
    Cards
    =================================== */
 
@@ -271,6 +325,13 @@ section {
 .navbar-brand:hover {
   color: var(--primary-green);
   text-decoration: none;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .navbar-nav {
@@ -558,6 +619,13 @@ footer {
 
 .footer-brand span {
   color: var(--secondary-orange);
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 25px;
+  display: block;
 }
 
 .social-links {

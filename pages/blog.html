@@ -5,169 +5,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Updates | Navinya Foundation</title>
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
     <!-- Header Placeholder - Header will be loaded here -->
     <div id="header-placeholder"></div>
 
-    <section class="hero-carousel" style="height: 400px;">
-        <div class="hero-slide active" style="background-image: url('../assets/images/hero/students-classroom.jpg');">
-            <div class="hero-overlay">
+    <!-- Hero Section - Professional & Minimal -->
+    <section class="hero-carousel" style="height: 380px;">
+        <div class="hero-slide active"
+            style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../assets/images/hero/students-classroom.jpg') center/cover;">
+            <div class="hero-overlay"
+                style="background: linear-gradient(135deg, rgba(44,95,45,0.85) 0%, rgba(0,119,182,0.7) 100%);">
                 <div class="hero-content">
-                    <h1>News & Updates</h1>
-                    <p>Latest Stories from the Field</p>
+                    <span class="text-uppercase ls-2 fw-bold mb-2 d-block text-white-50">Voices of Change</span>
+                    <h1 class="display-3 fw-bold mb-3">News & Updates</h1>
+                    <div style="width: 60px; height: 4px; background: var(--secondary-orange); margin: 0 auto;"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container" style="padding: 60px 0;">
-        <div class="row g-5">
-            <!-- Main Content -->
-            <div class="col-lg-8 reveal">
-                <h2 class="mb-4">Latest Updates</h2>
 
-                <!-- Article 1 -->
-                <div class="pillar-card mb-5 reveal shadow-lg border-0 p-0 overflow-hidden">
-                    <img src="../assets/images/news/scholarship-ceremony.jpg" class="w-100" alt="Scholarship Ceremony"
-                        style="height: 350px; object-fit: cover;">
-                    <div class="p-4">
-                        <div class="mb-3 text-muted small d-flex gap-3">
-                            <span><i class="far fa-calendar me-1"></i> Jan 15, 2025</span>
-                            <span><i class="far fa-folder me-1"></i> Education</span>
+    <!-- Main Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left Column: Articles -->
+                <div class="col-lg-8">
+
+                    <!-- Featured Story: Immersive Card -->
+                    <div class="featured-story reveal mb-5">
+                        <div
+                            class="glass-card overflow-hidden border-0 rounded-5 shadow-premium p-0 hover-lift position-relative">
+                            <div style="height: 450px; position: relative;">
+                                <img src="../assets/images/news/scholarship-ceremony.jpg" alt="Featured Story"
+                                    class="w-100 h-100" style="object-fit: cover;">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-4 p-lg-5"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                    <span
+                                        class="badge bg-primary px-3 py-2 rounded-pill mb-3 text-uppercase ls-1">Featured
+                                        Highlight</span>
+                                    <h2 class="display-6 fw-bold text-white mb-3">Empowering 500+ Students with Annual
+                                        Scholarships</h2>
+                                    <p class="text-white-50 mb-4 d-none d-md-block">A record-breaking year for our
+                                        Education Equity program as we expand support to deeper rural hamlets across
+                                        Maharashtra.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="reviewer-img-small me-3"
+                                            style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                            <i class="fas fa-feather-alt"></i>
+                                        </div>
+                                        <div class="text-white">
+                                            <p class="mb-0 fw-bold small">Editorial Desk</p>
+                                            <small class="text-white-50">January 20, 2025</small>
+                                        </div>
+                                        <a href="#" class="btn btn-primary rounded-pill px-4 ms-auto">Read Full
+                                            Story</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="mb-3"><a href="#" class="text-decoration-none text-dark hover-primary">Empowering
-                                Dreams: 100 Annual Scholarships Awarded</a></h3>
-                        <p class="text-secondary">We are proud to announce that the Navinya Foundation has awarded
-                            scholarships to 100 meritorious students from economically weaker sections.</p>
-                        <a href="#" class="btn btn-primary mt-2">Read Full Story <i
-                                class="fas fa-arrow-right ms-2"></i></a>
                     </div>
+
+                    <!-- News Feed Grid -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-12">
+                            <h4 class="fw-bold mb-4 ls-1 text-primary border-bottom pb-2">Recent Stories</h4>
+                        </div>
+
+                        <!-- Article 1 -->
+                        <div class="col-md-6 reveal stagger-1">
+                            <div
+                                class="glass-card h-100 border-0 rounded-4 overflow-hidden shadow-premium p-0 hover-lift d-flex flex-column">
+                                <div style="height: 220px; position: relative;">
+                                    <img src="../assets/images/news/women-training.jpg" alt="News" class="w-100 h-100"
+                                        style="object-fit: cover;">
+                                    <span
+                                        class="position-absolute top-0 end-0 m-3 badge bg-white text-primary rounded-pill shadow-sm">Training</span>
+                                </div>
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h5 class="fw-bold mb-3">New Skill Training Center Opens in Shirpur</h5>
+                                    <p class="text-muted small mb-4">Over 100 women have registered for the new textile
+                                        and digital literacy courses starting this February.</p>
+                                    <div
+                                        class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> Jan 08, 2025</small>
+                                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More <i
+                                                class="fas fa-chevron-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="col-md-6 reveal stagger-2">
+                            <div
+                                class="glass-card h-100 border-0 rounded-4 overflow-hidden shadow-premium p-0 hover-lift d-flex flex-column">
+                                <div style="height: 220px; position: relative;">
+                                    <img src="../assets/images/news/health-camp.jpg" alt="News" class="w-100 h-100"
+                                        style="object-fit: cover;">
+                                    <span
+                                        class="position-absolute top-0 end-0 m-3 badge bg-white text-danger rounded-pill shadow-sm">Health
+                                        Drive</span>
+                                </div>
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h5 class="fw-bold mb-3">Comprehensive Health Drive Reaches 12 Hamlets</h5>
+                                    <p class="text-muted small mb-4">Mobile clinics and specialist consultations
+                                        provided critical care to over 1,500 residents in remote tribal areas.</p>
+                                    <div
+                                        class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> Dec 28, 2024</small>
+                                        <a href="#" class="text-primary fw-bold small text-decoration-none">Read More <i
+                                                class="fas fa-chevron-right ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="reveal">
+                        <ul class="pagination justify-content-start">
+                            <li class="page-item disabled"><a class="page-link border-0 rounded-circle active mx-1"
+                                    href="#">1</a></li>
+                            <li class="page-item"><a class="page-link border-0 rounded-circle bg-light mx-1"
+                                    href="#">2</a></li>
+                            <li class="page-item"><a class="page-link border-0 rounded-circle bg-light mx-1"
+                                    href="#">3</a></li>
+                            <li class="page-item"><a class="page-link border-0 rounded-circle bg-light mx-1" href="#"><i
+                                        class="fas fa-chevron-right"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <!-- Article 2-6 (Grouped for premium styling) -->
-                <div class="row g-4">
-                    <!-- Article 2 -->
-                    <div class="col-md-6 reveal stagger-1">
-                        <div class="pillar-card border-0 p-0 overflow-hidden h-100">
-                            <img src="../assets/images/news/women-training.jpg" class="w-100" alt="Women Training"
-                                style="height: 200px; object-fit: cover;">
-                            <div class="p-3">
-                                <div class="mb-2 text-muted small"><i class="far fa-calendar me-1"></i> Jan 10</div>
-                                <h5 class="fw-bold">New Skill Center in Boradi</h5>
-                                <p class="small text-secondary">Expanding our reach with handicrafts & tailoring
-                                    centers.</p>
-                                <a href="#" class="btn btn-link text-primary p-0">Read More</a>
+                <!-- Right Column: Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar position-sticky" style="top: 100px;">
+
+                        <!-- Search -->
+                        <div class="glass-card p-4 rounded-4 mb-4 border-0 shadow-premium">
+                            <h6 class="fw-bold mb-3 text-uppercase ls-1 small text-primary">Find Updates</h6>
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 bg-light" placeholder="Search news..."
+                                    style="border-radius: 10px 0 0 10px;">
+                                <button class="btn btn-primary px-3" style="border-radius: 0 10px 10px 0;"><i
+                                        class="fas fa-search"></i></button>
                             </div>
                         </div>
-                    </div>
-                    <!-- Article 3 -->
-                    <div class="col-md-6 reveal stagger-2">
-                        <div class="pillar-card border-0 p-0 overflow-hidden h-100">
-                            <img src="../assets/images/news/health-camp.jpg" class="w-100" alt="Health Camp"
-                                style="height: 200px; object-fit: cover;">
-                            <div class="p-3">
-                                <div class="mb-2 text-muted small"><i class="far fa-calendar me-1"></i> Jan 05</div>
-                                <h5 class="fw-bold">Mobile Health Van Drive</h5>
-                                <p class="small text-secondary">Reached 3 hamlets, providing free care to 500+ patients.
-                                </p>
-                                <a href="#" class="btn btn-link text-primary p-0">Read More</a>
+
+                        <!-- Categories -->
+                        <div class="glass-card p-4 rounded-4 mb-4 border-0 shadow-premium">
+                            <h6 class="fw-bold mb-4 text-uppercase ls-1 small text-primary">Browse by Topic</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#"
+                                    class="badge bg-light text-dark px-3 py-2 text-decoration-none rounded-pill border hover-primary transition-base">Education
+                                    (12)</a>
+                                <a href="#"
+                                    class="badge bg-light text-dark px-3 py-2 text-decoration-none rounded-pill border hover-primary transition-base">Women
+                                    empowerment (8)</a>
+                                <a href="#"
+                                    class="badge bg-light text-dark px-3 py-2 text-decoration-none rounded-pill border hover-primary transition-base">Health
+                                    (15)</a>
+                                <a href="#"
+                                    class="badge bg-light text-dark px-3 py-2 text-decoration-none rounded-pill border hover-primary transition-base">Sustainability
+                                    (6)</a>
+                                <a href="#"
+                                    class="badge bg-light text-dark px-3 py-2 text-decoration-none rounded-pill border hover-primary transition-base">Annual
+                                    Reports (4)</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- Article 4 -->
-                    <div class="col-md-6 reveal stagger-1">
-                        <div class="pillar-card border-0 p-0 overflow-hidden h-100">
-                            <div style="height: 200px; background: #eee;"
-                                class="d-flex align-items-center justify-content-center">
-                                <i class="fas fa-leaf fa-3x text-success"></i>
+
+                        <!-- Newsletter: Professional Style -->
+                        <div class="p-4 rounded-4 border-0 shadow-premium position-relative overflow-hidden text-white"
+                            style="background: linear-gradient(135deg, var(--primary-green) 0%, #1a3a1b 100%);">
+                            <div class="position-absolute top-0 end-0 p-3 opacity-10">
+                                <i class="fas fa-paper-plane fa-5x"></i>
                             </div>
-                            <div class="p-3">
-                                <div class="mb-2 text-muted small"><i class="far fa-calendar me-1"></i> Dec 28</div>
-                                <h5 class="fw-bold">1000 Trees Planted</h5>
-                                <p class="small text-secondary">Massive monsoon drive along the river banks of Shirpur.
-                                </p>
-                                <a href="#" class="btn btn-link text-primary p-0">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Article 5 -->
-                    <div class="col-md-6 reveal stagger-2">
-                        <div class="pillar-card border-0 p-0 overflow-hidden h-100">
-                            <div style="height: 200px; background: #eee;"
-                                class="d-flex align-items-center justify-content-center">
-                                <i class="fas fa-handshake fa-3x text-primary"></i>
-                            </div>
-                            <div class="p-3">
-                                <div class="mb-2 text-muted small"><i class="far fa-calendar me-1"></i> Dec 15</div>
-                                <h5 class="fw-bold">Smart Village Partnership</h5>
-                                <p class="small text-secondary">New collaboration with District Administration.</p>
-                                <a href="#" class="btn btn-link text-primary p-0">Read More</a>
+                            <div class="position-relative">
+                                <h5 class="fw-bold mb-2">Impact Newsletter</h5>
+                                <p class="small mb-4 text-white-50">Join 5,000+ supporters receiving stories of change
+                                    monthly.</p>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control bg-white-10 border-0 text-white py-3 px-4"
+                                        placeholder="Email Address"
+                                        style="background: rgba(255,255,255,0.1); border-radius: 12px;">
+                                </div>
+                                <button class="btn btn-light w-100 py-3 fw-bold text-primary"
+                                    style="border-radius: 12px;">Subscribe Now</button>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Pagination -->
-                <nav aria-label="Page navigation" class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="col-lg-4 reveal-left stagger-1">
-                <!-- Search -->
-                <div class="card mb-4 border-0 shadow-sm p-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search news...">
-                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                     </div>
-                </div>
-
-                <!-- Categories -->
-                <div class="pillar-card mb-4 border-0 p-4">
-                    <h5 class="mb-4 fw-bold">Categories</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#"
-                                class="text-decoration-none text-dark d-flex justify-content-between align-items-center"><span>Education</span>
-                                <span class="badge rounded-pill bg-light text-primary border px-3">12</span></a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-decoration-none text-dark d-flex justify-content-between align-items-center"><span>Health</span>
-                                <span class="badge rounded-pill bg-light text-primary border px-3">8</span></a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-decoration-none text-dark d-flex justify-content-between align-items-center"><span>Women
-                                    Empowerment</span>
-                                <span class="badge rounded-pill bg-light text-primary border px-3">10</span></a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="pillar-card mb-4 border-0 p-4 bg-primary text-white text-center">
-                    <div class="mb-3">
-                        <i class="far fa-envelope-open fa-3x"></i>
-                    </div>
-                    <h5 class="mb-2 fw-bold">Impact Newsletter</h5>
-                    <p class="small mb-4 opacity-75">Get stories of change directly in your inbox.</p>
-                    <div class="mb-2">
-                        <input type="email" class="form-control border-0 py-3" placeholder="Enter your email"
-                            style="border-radius: 10px;">
-                    </div>
-                    <button class="btn btn-light w-100 py-3 text-primary fw-bold" style="border-radius: 10px;">Subscribe
-                        Now</button>
                 </div>
             </div>
         </div>
+    </section>
     </section>
     <!-- Footer Placeholder - Footer will be loaded here -->
     <div id="footer-placeholder"></div>

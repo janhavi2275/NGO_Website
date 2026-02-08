@@ -600,7 +600,7 @@ Every contribution, big or small, creates lasting change
 **Three CTA Buttons** (side by side):
 - "Donate Now" (White background, green text) → `/pages/donate.html`
 - "Volunteer" (White outline) → `/pages/volunteer.html`
-- "Partner With Us" (White outline) → `/pages/partner.html`
+- "Partner With Us" (White outline) → `/pages/partners.html`
 
 ---
 
@@ -674,7 +674,7 @@ Building a brighter tomorrow for rural Maharashtra
 
 - Donate Now → `/pages/donate.html`
 - Volunteer → `/pages/volunteer.html`
-- Partner With Us → `/pages/partner.html`
+- Partner With Us → `/pages/partners.html`
 - Careers → `/pages/careers.html`
 - Internships → `/pages/internships.html`
 

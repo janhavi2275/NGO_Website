@@ -31,7 +31,7 @@ Navinya_AG/
 4. **Get Involved**
    - Donate (`pages/donate.html`)
    - Volunteer (`pages/volunteer.html`)
-   - Partner With Us (`pages/partner.html`)
+   - Partner With Us (`pages/partners.html`)
    - Careers (`pages/careers.html`)
    - Internships (`pages/internships.html`)
 5. **Impact & Stories** (`pages/impact.html`)

@@ -488,7 +488,7 @@ Join us in creating new beginnings for thousands of lives
 **CTA Buttons**:
 - "Donate Now" (White background) → `/pages/donate.html`
 - "Volunteer With Us" (White outline) → `/pages/volunteer.html`
-- "Partner With Us" (White outline) → `/pages/partner.html`
+- "Partner With Us" (White outline) → `/pages/partners.html`
 
 ---
 

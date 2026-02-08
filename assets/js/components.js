@@ -65,7 +65,7 @@ const FOOTER_HTML = `
                 <ul>
                     <li><a href="../pages/donate.html">Donate</a></li>
                     <li><a href="../pages/volunteer.html">Volunteer</a></li>
-                    <li><a href="../pages/partner.html">Partner With Us</a></li>
+                    <li><a href="../pages/partners.html">Partner With Us</a></li>
                     <li><a href="../pages/careers.html">Careers</a></li>
                     <li><a href="../pages/internships.html">Internships</a></li>
                 </ul>

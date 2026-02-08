@@ -43,7 +43,7 @@
 
 ---
 
-## Partner With Us (`pages/partner.html`)
+## Partner With Us (`pages/partners.html`)
 
 **Hero**: `Partner With Us | साझेदारी करें`  
 **Subheadline**: `Together, we can create lasting change`

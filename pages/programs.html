@@ -5,40 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Programs | Navinya Foundation</title>
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
     <!-- Header Placeholder - Header will be loaded here -->
     <div id="header-placeholder"></div>
 
+    <!-- Page Hero - Refined -->
     <section class="hero-carousel" style="height: 400px;">
-        <div class="hero-slide active" style="background-image: url('../assets/images/hero/village-scene.jpg');">
-            <div class="hero-overlay">
+        <div class="hero-slide active"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/hero/village-scene.jpg') center/cover;">
+            <div class="hero-overlay"
+                style="background: linear-gradient(to bottom, rgba(44,95,45,0.8), rgba(0,119,182,0.6));">
                 <div class="hero-content">
-                    <h1>Our Programs</h1>
-                    <p>Comprehensive Solutions for Sustainable Development</p>
+                    <span class="text-uppercase ls-2 fw-bold mb-3 d-block"
+                        style="color: rgba(255,255,255,0.8);">Holistic Development</span>
+                    <h1 class="display-3 fw-bold mb-4">Our Programs</h1>
+                    <div style="width: 80px; height: 4px; background: var(--secondary-orange); margin: 0 auto;"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container" style="padding: 60px 0;">
-        <h2 class="reveal">Our 7 Pillars of Impact</h2>
-        <p class="reveal stagger-1">Detailed overview of our seven core pillars working towards holistic rural
-            transformation.</p>
-        <ul class="reveal stagger-2">
-            <li><a href="education.html">Education Equity</a></li>
-            <li><a href="women-empowerment.html">Women Empowerment</a></li>
-            <li><a href="rural-development.html">Rural Development</a></li>
-            <li><a href="child-welfare.html">Child Welfare</a></li>
-            <li><a href="health.html">Health & Sanitation</a></li>
-            <li><a href="environment.html">Environment & Sustainability</a></li>
-            <li><a href="community.html">Community Building</a></li>
-        </ul>
+
+    <!-- Pillars Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="text-primary fw-bold text-uppercase ls-2 mb-2 d-block">Foundations of Change</span>
+                <h2 class="display-5 fw-bold mb-4 text-gradient">The 7 Pillars of Impact</h2>
+                <div style="width: 60px; height: 3px; background: var(--secondary-orange); margin: 0 auto 40px;"></div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <!-- Pillar 1: Education -->
+                <div class="col-lg-4 col-md-6 reveal stagger-1">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-user-graduate fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Education Equity</h4>
+                        <p class="text-muted small mb-4">Providing scholarships, digital literacy, and school
+                            infrastructure
+                            support to ensure every child has access to quality education.</p>
+                        <div class="mt-auto">
+                            <a href="education.html" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Women Empowerment -->
+                <div class="col-lg-4 col-md-6 reveal stagger-2">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-venus fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Women Empowerment</h4>
+                        <p class="text-muted small mb-4">Fostering financial independence through skill training,
+                            self-help groups
+                            (SHGs), and micro-entrepreneurship support.</p>
+                        <div class="mt-auto">
+                            <a href="women-empowerment.html" class="btn btn-primary rounded-pill px-4 py-2">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Rural Development -->
+                <div class="col-lg-4 col-md-6 reveal stagger-3">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-tractor fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Rural Development</h4>
+                        <p class="text-muted small mb-4">Enabling sustainable agriculture, water conservation, and
+                            community
+                            infrastructure projects for self-reliant villages.</p>
+                        <div class="mt-auto">
+                            <a href="rural-development.html" class="btn btn-primary rounded-pill px-4 py-2">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 4: Child Welfare -->
+                <div class="col-lg-4 col-md-6 reveal stagger-1">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-child fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Child Welfare</h4>
+                        <p class="text-muted small mb-4">Ensuring health, nutrition, and protection for children in
+                            rural areas
+                            through community-based interventions.</p>
+                        <div class="mt-auto">
+                            <a href="child-welfare.html" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 5: Health & Sanitation -->
+                <div class="col-lg-4 col-md-6 reveal stagger-2">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-hospital-user fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Health & Sanitation</h4>
+                        <p class="text-muted small mb-4">Organizing medical camps, hygiene awareness drives, and
+                            promoting clean
+                            sanitation practices in villages.</p>
+                        <div class="mt-auto">
+                            <a href="health.html" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 6: Environment & Sustainability -->
+                <div class="col-lg-4 col-md-6 reveal stagger-3">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-leaf fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Environment</h4>
+                        <p class="text-muted small mb-4">Promoting tree plantation, renewable energy, and eco-friendly
+                            practices to
+                            protect our natural resources.</p>
+                        <div class="mt-auto">
+                            <a href="environment.html" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 7: Community Building -->
+                <div class="col-lg-4 col-md-6 reveal stagger-1 mx-auto">
+                    <div
+                        class="glass-card border-0 rounded-4 hover-lift shadow-premium h-100 text-center p-4 d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="fas fa-users fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Community Building</h4>
+                        <p class="text-muted small mb-4">Strengthening democratic values and collective action through
+                            village
+                            meetings and youth leadership programs.</p>
+                        <div class="mt-auto">
+                            <a href="community.html" class="btn btn-primary rounded-pill px-4 py-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer Placeholder - Footer will be loaded here -->
     <div id="footer-placeholder"></div>
