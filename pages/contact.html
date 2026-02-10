@@ -232,92 +232,164 @@
     </section>
 
     <!-- FAQ Section -->
-    <section>
+    <section id="faq" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
+            <div class="section-header text-center mb-5 reveal">
+                <span class="text-primary fw-bold text-uppercase ls-2 mb-2 d-block">Common Questions</span>
+                <h2 class="display-5 fw-bold mb-4">Frequently Asked Questions</h2>
+                <div style="width: 60px; height: 3px; background: var(--secondary-orange); margin: 0 auto;"></div>
             </div>
+
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="accordion" id="faqAccordion">
-                        <!-- FAQ 1 -->
-                        <div class="card mb-3">
-                            <div class="card-header" id="faq1">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link w-100 text-start" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                        How can I apply for a scholarship?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse1" class="collapse show" data-bs-parent="#faqAccordion">
-                                <div class="card-body">
-                                    You can apply for scholarships through our online application form available on the
-                                    Education page. Applications are typically open from June to August each year.
-                                    You'll need academic records, income certificate, and other supporting documents.
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <!-- FAQ 1: Scholarships -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How can I apply for a scholarship?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    You can apply for scholarships via the form on our <a
+                                        href="education.html">Education page</a>. Applications typically open from June
+                                    to August. You will need academic records, an income certificate, and a letter of
+                                    recommendation from your school principal.
                                 </div>
                             </div>
                         </div>
 
-                        <!-- FAQ 2 -->
-                        <div class="card mb-3">
-                            <div class="card-header" id="faq2">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link w-100 text-start collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                        How do I volunteer with Navinya Foundation?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse2" class="collapse" data-bs-parent="#faqAccordion">
-                                <div class="card-body">
-                                    Visit our Volunteer page and fill out the volunteer registration form. We have
-                                    opportunities for both on-ground volunteers in Maharashtra and remote volunteers who
-                                    can help with digital tasks.
-                                    <div class="pillar-card border-0 shadow-lg reveal stagger-1 p-4 mb-5"
-                                        style="border-radius: 20px;">
-                                        <div class="accordion accordion-flush" id="faqAccordion">
-                                            <!-- FAQ Item 1 -->
-                                            <div class="accordion-item border-0 mb-3"
-                                                style="border-radius: 15px; overflow: hidden; background: #f8f9fa;">
-                                                <h2 class="accordion-header">
-                                                    <button
-                                                        class="accordion-button collapsed fw-bold py-4 px-4 bg-transparent"
-                                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                                        Where exactly is your office located?
-                                                    </button>
-                                                </h2>
-                                                <div id="faq1" class="accordion-collapse collapse"
-                                                    data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body px-4 pb-4">
-                                                        Our main operational office is in Shirpur city, Dhule district,
-                                                        North Maharashtra. You can find us near the main bus stand area.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- FAQ Item 2 -->
-                                            <div class="accordion-item border-0 mb-3"
-                                                style="border-radius: 15px; overflow: hidden; background: #f8f9fa;">
-                                                <h2 class="accordion-header">
-                                                    <button
-                                                        class="accordion-button collapsed fw-bold py-4 px-4 bg-transparent"
-                                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                                        How can I get my donation receipt for tax benefits?
-                                                    </button>
-                                                </h2>
-                                                <div id="faq2" class="accordion-collapse collapse"
-                                                    data-bs-parent="#faqAccordion">
-                                                    <div class="accordion-body px-4 pb-4">
-                                                        All online donations automatically generate an e-receipt. For
-                                                        80G certificates, please email us with your PAN details.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <!-- FAQ 2: Volunteering -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How do I volunteer with Navinya Foundation?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Visit our <a href="volunteer.html">Volunteer page</a> and fill out the registration
+                                    form. We offer both on-ground opportunities in Maharashtra and remote digital tasks
+                                    like content writing or social media management.
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FAQ 3: 80G Receipts -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Are my donations tax-deductible?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Yes, all donations to Navinya Foundation are eligible for tax exemption under
+                                    Section 80G of the Income Tax Act. After your donation, an e-receipt is generated.
+                                    Please ensure you provide your PAN details during the donation process.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4: CSR Partnerships -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How can my company partner for CSR initiatives?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    We welcome corporate partnerships! Please visit our <a href="partners.html">Partners
+                                        page</a> or email us at csr@navinya.org to discuss project alignment, impact
+                                    reporting, and customized CSR projects in rural development or education.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5: Impact Tracking -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How do I know how my donation is being used?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Transparency is our priority. We publish annual impact reports and monthly project
+                                    updates on our <a href="impact.html">Impact page</a>. Donors also receive quarterly
+                                    newsletters detailing the progress of specific programs they support.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6: Career Opportunities -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Are there any open positions in the foundation?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    All available job openings and internships are listed on our <a
+                                        href="careers.html">Careers page</a>. You can also send your resume to
+                                    hr@navinya.org for our future talent pool.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7: Workshop Requests -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    Can we request a health or digital literacy workshop for our village?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Absolutely. Gram Panchayats or local community leaders can submit a formal request
+                                    through this <a href="#contactForm">Contact Form</a>. Our team will review the
+                                    feasibility and reach out within 7-10 working days.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8: Media/Press Inquiries -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm"
+                            style="border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq8">
+                                    Who should I contact for media or press inquiries?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    For press releases, media kits, or interview requests with our founders, please
+                                    contact our Communication Department at media@navinya.org.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer Placeholder - Footer will be loaded here -->
