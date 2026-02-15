@@ -97,7 +97,6 @@ function loadHeader() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = HEADER_HTML;
-        fixNavigationLinks();
         initializeMobileMenu();
     }
 }
@@ -143,7 +142,6 @@ function fixNavigationLinks() {
         }
 
         // Fix footer links for root page
-        // The footer is now loaded directly, so we can query its content
         const footerPlaceholder = document.getElementById('footer-placeholder');
         if (footerPlaceholder) {
             const footerLinks = footerPlaceholder.querySelectorAll('a[href^="../"]');
@@ -221,8 +219,10 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         loadHeader();
         loadFooter();
+        fixNavigationLinks();
     });
 } else {
     loadHeader();
     loadFooter();
+    fixNavigationLinks();
 }
